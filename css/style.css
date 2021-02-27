@@ -1,74 +1,126 @@
-*,
-*::after,
-*::before {
-   margin: 0;
-   box-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
 
-.container {
-   width: 1240px;
-   max-width: 100%;
-   margin: 0 auto;
+body{
+    background-color: #252525;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-   background-color: rgb(73, 73, 73);
+a{
+    text-decoration: none;
 }
 
-a {
-	text-decoration: none;
-	color: #fff;
-}
-/* =======HEADER======= */
-.header {
-   padding-top: 30px;
-}
+.botton{
+    display: inline-block;
+    font-weight: 600;
+    color: black;
 
-.header__logo {
-   width: 250px;
-}
-
-.header__inner {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+    border-bottom-style: none;
+    border-radius: 20px;
+    background: #ffffff;
+    padding: 10px;
+    transition: .5s;
 }
 
-.header__nav {
-   display: flex;
+.botton>a{
+    color: black;
 }
 
-.header__nav a, .header__btn {
-   font-size: 20px;
-   font-weight: 700;
-   text-decoration: none;
-   color: rgb(255, 255, 255);
-   opacity: 0.7;
-	transition: opacity .2s;
+.botton:hover{
+    box-shadow: 0 0 25px rgb(255 255 255 / 75%);
+    transition: .5s;
 }
 
-.header__inner a:hover {
-	transition: opacity .2s;
-   opacity: 1;
+/* ШАПКА САЙТА */
+.header{
+    margin-bottom: 150px;
 }
 
-.header__list a {
-   padding-right: 45px;
+.container{
+    max-width: 1224px;
+    margin: 0px auto;
+    padding: 0px 10px;
 }
 
-.header__btn {
-	padding: 6px 25px 10px 25px;
-	border: solid rgb(0, 38, 255) 1px;
-	border-radius: 20px;
-	background-color: #4e4e4e;
-	transition: background-color .2s;
+.logo__img{
+    width: 60px;
 }
 
-.header__btn:hover {
-	opacity: 1;
-	transition: background-color .2s;
-	background-color: rgb(64, 28, 224);
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a:hover{
+    border-bottom: solid 1px #ffffff;
+}
+
+.menu__list{
+    display: flex;
+}
+
+.menu__list-item + .menu__list-item{
+    margin-left: 50px;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+.menu__list-link{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-/* ==================== */
+.user-nav-link{
+    /* FIXME: */
+    font-weight: 600;
+    color: black;
+
+    border-bottom-style: none;
+    border-radius: 20px;
+    background: #ffffff;
+    padding: 10px;
+    transition: .5s;
+    
+}
+
+
+/* ТЕКСТ САЙТА */
+
+.top__titel{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.top__text{
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.create-account + .download{
+    margin-left: 150px;
+}
+
+.download{
+    display: inline-flex;
+    width: 250px;
+}
+
+.botton-flex{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.arma3{
+    z-index: 2;
+    background: url(../images/img-arma3.png) no-repeat;
+    background-size: 30px 30px;
+}
+
